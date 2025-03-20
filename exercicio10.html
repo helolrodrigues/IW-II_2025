@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10 - Adivinhação</title>
+</head>
+<body>
+    <script>
+    let adivinhe = Math.floor(Math.random() * 10) + 1;
+    let chute;
+    while (true) {
+        chute = prompt("Adivinhe um número de 1 a 10:");
+        if (chute == adivinhe) {
+            alert("Acertou!");
+            break;
+        } else if (chute > adivinhe) {
+            alert("chute muito alto!");
+        } else {
+            alert("chute muito baixo!");
+        }
+    }
+    </script>
+</body>
+</html>

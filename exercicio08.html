@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 08 - Login Simples</title>
+</head>
+<body>
+    <script>
+         let usuario, senha;
+        while (true) {
+            usuario = prompt("Digite seu usuário:");
+            senha = prompt("Digite sua senha:");
+            if (usuario === "etec" && senha === "mcm") {
+                alert("Login realizado!");
+                break;
+            } else {
+                alert("Usuário ou senha incorretos, tente novamente mais tarde!.");
+            }
+        }
+    </script>
+</body>
+</html>
