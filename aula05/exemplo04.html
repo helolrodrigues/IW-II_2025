@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função com vários parâmetros e valores padrão</title>
+</head>
+<body>
+    <script>
+        function potencia(base, expoente = 2){
+            return Math.pow(base, expoente);
+        }
+        console.log(potencia (3));
+        console.log(potencia (3, 3));
+    </script>
+</body>
+</html>

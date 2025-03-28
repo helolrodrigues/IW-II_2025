@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções com Múltiplos retornos</title>
+</head>
+<body>
+    <script>
+        function divisao(dividendo, divisor){
+            let quociente = Math.floor(dividendo/divisor);
+            let resto = dividendo % divisor;
+            return [quociente, resto];
+        }
+        let[q, r]= divisao(10,3);
+        console.log("Quociente:", q);
+        console.log("Resto:", r);
+    </script>
+</body>
+</html>
