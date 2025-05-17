@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input alterando outro elemento</title>
+</head>
+<body>
+    <input type="text" id="caixa" placeholder="Digite um texto" onkeydown="executar()">
+    <br>
+    <p>Texto recebido é: <span id ="texto"></span></p>
+
+    <script>
+        var caixa = document.getElementById ("caixa");
+        var textom  = document.getElementById("texto");
+
+        function executar(){
+            var letra = caixa.value;
+            //console.log (letra);
+            texto.innerHTML = letra;
+        }
+    </script>
+</body>
